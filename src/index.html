@@ -12,7 +12,16 @@
   <main>
     <h1>Vanilla JavaScript App</h1>
     <h2>Tutorial completed</h2>
+
+    <button id="showButton">Click me!</button>
+    <p id="message" style="display: none; margin-top: 10px;">🎉 You clicked the button!</p>
   </main>
+
+  <script>
+    document.getElementById('showButton').addEventListener('click', function () {
+      document.getElementById('message').style.display = 'block';
+    });
+  </script>
 </body>
 
 </html>
